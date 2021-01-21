@@ -39,6 +39,7 @@ public class ExtentReport_TestNG {
 	public void setUpTest() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(); 
+		driver.manage().window().maximize();
 
 	}
 

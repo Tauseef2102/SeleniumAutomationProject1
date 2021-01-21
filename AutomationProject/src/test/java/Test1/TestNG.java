@@ -19,7 +19,8 @@ public class TestNG{
 	@BeforeTest
 	public void setUpTest() {
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver(); 
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 
 	@Test
